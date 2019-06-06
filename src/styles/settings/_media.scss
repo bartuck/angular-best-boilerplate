@@ -1,0 +1,21 @@
+/**
+ * MEDIA & BREAKPOINTS & RELEVANT SIZES - Use the Mobile First approach!
+ * Resolution -|- Usage - https://www.rapidtables.com/web/dev/screen-resolution-statistics.html
+ * - 1366x768 - 19.1%
+ * - 1920x1080 - 9.4%
+ * - 1280x800 - 8.5%
+ * - 320x568 - 6.4%
+ * - 1440x900 - 5.7%
+ * - others
+ */
+$media-xxs: 320px; // iPhone 5
+$media-xxs-standard: 360px;// SmartPhone
+$media-xs: 576px; // Bootstrap v4
+$media-sm: 768px; // Bootstrap v4
+$media-lg: 992px; // Bootstrap v4
+$media-xl: 1200px; // Bootstrap v4
+$media-xl-screen: 1920px;
+$media-notebook: 1280px;
+$media-laptop: 1366px;
+$media-macbook: 1440px;
+$media-monitor: 1600px;
