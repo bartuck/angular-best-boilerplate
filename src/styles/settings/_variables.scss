@@ -1,0 +1,44 @@
+/**
+ * COLORS
+ */
+$color-default-font: black;
+$color-red-error: red;
+$color-red-bg: rgba(red, .5);
+// ...your custom colors
+
+/**
+ * SPACING: MARGINS & PADDING
+ */
+$space-xs: 3px;
+$space-sm: 5px;
+$space-md: 10px;
+$space-lg: 15px;
+$space-xl: 15px;
+
+/**
+ * FONTS
+ */
+$font-size-xs: .5rem;
+$font-size-sm: .6rem;
+$font-size-md: .75rem;
+$font-size-default: 1rem;
+$font-size-lg: 1.2rem;
+$font-size-xl: 1.4rem;
+
+/**
+ * Z-INDEXES & LAYERS
+ */
+$z-index-bottom: -1;
+$z-index-default: 0;
+$z-index-top: 1;
+$z-index-dropdown: 10;
+$z-index-menu: 1000;
+$z-index-overlay: 1100;
+$z-index-dialog: 1200;
+$z-index-notification: 1300;
+
+/**
+ * TRANSITIONS & EFFECTS
+ */
+$transition-effect-default: .3s ease;
+$transition-bezier: .3s cubic-bezier(0, 0, 0.2, 1);
