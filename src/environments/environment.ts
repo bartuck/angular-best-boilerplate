@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseApiUrl: 'https://dev.example.com/api/v1'
+  // baseAPI: PROXY_PREFIX_API_URL // using by http proxy,
 };
 
 /*
