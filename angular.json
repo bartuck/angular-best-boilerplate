@@ -29,7 +29,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/lib/js/modernizr-touch-events.js"
+            ]
           },
           "configurations": {
             "production": {
