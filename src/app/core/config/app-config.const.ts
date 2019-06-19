@@ -1,7 +1,11 @@
 /**
  * Global Configuration, i.e. languages, locale, date formats etc.
+ *
+ * Shared settings for all environments: dev, prod, stage etc.
  */
-export const APP_CONFIG = {
-  DEFAULT_LANGUAGE: 'en_GB',
-  AVAILABLE_LANGUAGES: ['en_GB', 'pl_PL']
+import { AppConfig } from '../interfaces/app-config.interface';
+
+export const appConfig: AppConfig = {
+  defaultLanguage: 'en_GB',
+  availableLanguages: ['en_GB', 'pl_PL']
 };
