@@ -1,5 +1,22 @@
+// Settings
 @import "reset";
 @import "settings";
-//@import "general/*.scss";
-//@import "templates/*.scss";
+
+// General
+@import "general/animations";
+@import "general/backgrounds";
+@import "general/buttons";
+@import "general/decorations";
+@import "general/forms";
+@import "general/icons";
+@import "general/images";
+@import "general/layout";
+@import "general/typography";
+
+// Templates
+@import "templates/card";
+@import "templates/notifications";
+@import "templates/page";
+
+// Vendors
 //@import "vendors/*.scss";
