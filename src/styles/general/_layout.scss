@@ -1,3 +1,20 @@
 /**
  * Global Layout and Grid System
  */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
