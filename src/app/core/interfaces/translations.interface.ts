@@ -6,4 +6,7 @@
 export interface Translations {
   title: string;
   hello_world: string;
+  users: string;
+  home: string;
+  language: string;
 }

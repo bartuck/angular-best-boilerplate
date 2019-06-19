@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { APP_ROUTING_CONFIG } from './core/config/app-routing-config.const';
+import { routerConfig } from './core/config/router-config.const';
+import { HomeComponent } from './core/components/home/home.component';
 
 const routes: Routes = [
   {
-    path: APP_ROUTING_CONFIG.USERS.BASE,
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: routerConfig.users.base,
     loadChildren: () => import('./pages/users/users.module').then(mod => mod.UsersModule)
   }
 ];
