@@ -12,8 +12,11 @@ _...To not to reinvent the wheel again_.
 
 ## TODO
 _- Getting started_
+
 _- Husky and hooks or "ng push"_
+
 _- Stats & analyzer & Lighthouse_
+
 _- TSLint_
 
 <a name="general"/>
