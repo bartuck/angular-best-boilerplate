@@ -11,8 +11,10 @@ _...To not to reinvent the wheel again_.
 4. [Appendix](#appendix)
 
 ## TODO
-- Getting started
-- Husky and hooks
+_- Getting started_
+_- Husky and hooks or "ng push"_
+_- Stats & analyzer & Lighthouse_
+_- TSLint_
 
 <a name="general"/>
 
@@ -33,7 +35,7 @@ The directories you always need:
 
 ![General Concept](https://raw.githubusercontent.com/bartuck/angular-best-boilerplate/master/src/assets/images/contents/angular-best-boilerplate-general.png)
 
-<a name="#application"/>
+<a name="application"/>
 
 ## Application concept
 
@@ -43,7 +45,7 @@ The directories you always need:
 3. Features.
 4. Lazy (lazy loaded folders).
 
-The class your components will need in most of the cases: **AppController**. It stores:
+The class your components will need to extend (probably): **AppController**. It stores:
 - public configuration and settings,
 - router data,
 - current translations.
