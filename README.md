@@ -2,13 +2,17 @@
 
 This project is created for Angular 8+.
 
-_...To Not Reinvent The Wheel Again_.
+_...To not to reinvent the wheel again_.
 
 ## Table of Contents  
 1. [General Concept](#general)
 2. [Application Concept](#application)
 3. [Some hints](#hints)
 4. [Appendix](#appendix)
+
+## TODO
+- Getting started
+- Husky and hooks
 
 <a name="general"/>
 
