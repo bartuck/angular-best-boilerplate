@@ -4,20 +4,48 @@ This project is created for Angular 8+.
 
 _...To not to reinvent the wheel again_.
 
-## Table of Contents  
-1. [General Concept](#general)
-2. [Application Concept](#application)
-3. [Some hints](#hints)
-4. [Appendix](#appendix)
+## Table of Contents
+1. [What this repo contains](#contents)
+2. [Getting Started](#getting-started)
+3. [General Concept](#general)
+4. [Application Concept](#application)
+5. [Some hints](#hints)
+6. [Appendix](#appendix)
 
 ## TODO
-_- Getting started_
 
-_- Husky and hooks or "ng push"_
+_- TSLint settings_
 
-_- Stats & analyzer & Lighthouse_
+_- Environments settings in angular.json_
 
-_- TSLint_
+_- UIkit or Storybook_
+
+<a name="contents"/>
+
+## What this repo contains
+
+1. Auto `ng build --prod` attached on Git/Husky hook "pre-push".
+2. Common SCSS files in `src/styles`.
+3. Extendable abstract AppController in `src/app/app.controller.ts`.
+4. Proxying by `proxy.conf.json` on `npm start`.
+5. Webpack Bundle Analyzer on `npm run analyzer`.
+6. ApiInterceptor in `src/app/core/interceptors/api.interceptor.ts` setting API url from `src/environments`;
+
+<a name="getting-started"/>
+
+## Getting Started
+
+1. `git clone` this repo.
+2. `npm install`
+3. Remove the contents of `src/assets/images/contents`.
+4. Put your translations in `src/translations` and set them in `src/app/app.controller.ts`.
+5. Add your core configuration in `src/app/core/config/app-config.const.ts`.
+6. Add your router config in `src/app/core/config/router-config.const.ts`.
+7. Remove `proxy.conf.json` if you don't need proxying. Otherwise, put your target there.
+8. `npm start` calls `ng serve --proxy-config=proxy.conf.json` from `package.json` (remove 6th line from `package.json` if you don't need proxying).
+9. Set your project name in `package.json`: lines 2nd and 12th.
+10. Set your API urls in `src/environments`.
+11. You are ready.
 
 <a name="general"/>
 
@@ -48,7 +76,9 @@ The directories you always need:
 3. Features.
 4. Lazy (lazy loaded folders).
 
-The class your components will need to extend (probably): **AppController**. It stores:
+![Application Workflow](https://raw.githubusercontent.com/bartuck/angular-best-boilerplate/master/src/assets/images/contents/angular-best-boilerplate-workflow.png)
+
+The class that some of your components will need to extend: **AppController**. It stores:
 - public configuration and settings,
 - router data,
 - current translations.
