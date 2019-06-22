@@ -1,0 +1,11 @@
+{
+  "/api": {
+    "target": "https://user:password@dev-api.example.pl",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}
