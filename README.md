@@ -7,29 +7,31 @@ _...To not to reinvent the wheel again_.
 ## Table of Contents
 1. [What this repo contains](#contents)
 2. [Getting Started](#getting-started)
-3. [General Concept](#general)
-4. [Application Concept](#application)
-5. [Some hints](#hints)
-6. [Appendix](#appendix)
+3. [CLI](#cli)
+4. [General Concept](#general)
+5. [Application Concept](#application)
+6. [Some hints](#hints)
+7. [Appendix](#appendix)
 
 ## TODO
 
+_- Simplify **Getting Started** - interactive dialog or @schematics_
+
 _- TSLint settings_
 
-_- Environments settings in angular.json_
-
-_- UIkit or Storybook_
+_- UIkit, Style Guide or Storybook_
 
 <a name="contents"/>
 
 ## What this repo contains
 
-1. Auto `ng build --prod` attached on Git/Husky hook "pre-push".
+1. Auto `ng build --prod` attached on Git/Husky hook "pre-push" to avoid some of build failures during a deployment of the app.
 2. Common SCSS files in `src/styles`.
 3. Extendable abstract AppController in `src/app/app.controller.ts`.
 4. Proxying by `proxy.conf.json` on `npm start`.
 5. Webpack Bundle Analyzer on `npm run analyzer`.
-6. ApiInterceptor in `src/app/core/interceptors/api.interceptor.ts` setting API url from `src/environments`;
+6. ApiInterceptor in `src/app/core/interceptors/api.interceptor.ts` to set base API url taken from `src/environments` directory;
+7. `src/lib/js/modernizr-touch-events.js` indicates if the browser supports the W3C Touch Events API.
 
 <a name="getting-started"/>
 
@@ -39,13 +41,33 @@ _- UIkit or Storybook_
 2. `npm install`
 3. Remove the contents of `src/assets/images/contents`.
 4. Put your translations in `src/translations` and set them in `src/app/app.controller.ts`.
-5. Add your core configuration in `src/app/core/config/app-config.const.ts`.
+5. Add your custom core configuration in `src/app/core/config/app-config.const.ts` (you will need it in the future).
 6. Add your router config in `src/app/core/config/router-config.const.ts`.
 7. Remove `proxy.conf.json` if you don't need proxying. Otherwise, put your target there.
 8. `npm start` calls `ng serve --proxy-config=proxy.conf.json` from `package.json` (remove 6th line from `package.json` if you don't need proxying).
 9. Set your project name in `package.json`: lines 2nd and 12th.
 10. Set your API urls in `src/environments`.
-11. You are ready.
+11. Replace the default Angular favicon with yours.
+12. You are ready to work.
+
+<a name="cli"/>
+
+## CLI
+
+### Build
+
+`ng build --configuration=production` or `ng build --prod`
+
+`ng build --configuration=dev`
+
+`ng build --configuration=stage`
+
+`ng build --configuration=uat`
+
+### Webpack Bundle Analyzer
+
+`npm run analyzer`
+
 
 <a name="general"/>
 
