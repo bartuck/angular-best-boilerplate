@@ -21,4 +21,11 @@ export abstract class AppController {
    * Current translations
    */
   public trans: Translations = en_GB;
+
+  /**
+   * Current translations available anywhere
+   */
+  static trans(): Translations {
+    return en_GB;
+  }
 }
