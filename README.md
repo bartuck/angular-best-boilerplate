@@ -30,7 +30,9 @@ _- UIkit, Style Guide or Storybook_
 3. Extendable abstract AppController in `src/app/app.controller.ts`.
 4. Proxying by `proxy.conf.json` on `npm start`.
 5. Webpack Bundle Analyzer on `npm run analyzer`.
-6. ApiInterceptor in `src/app/core/interceptors/api.interceptor.ts` to a) set base API url taken from `src/environments` directory; set recommended HTTP headers (security);
+6. ApiInterceptor in `src/app/core/interceptors/api.interceptor.ts` to:
+- set base API url taken from `src/environments` directory 
+- set recommended HTTP headers (security)
 7. `src/lib/js/modernizr-touch-events.js` indicates if the browser supports the W3C Touch Events API.
 8. Auto-refreshing the app browser tab title on route change (see `src/app/app.component.ts`)
 
@@ -186,7 +188,7 @@ A distinct application feature or workflow may be lazy loaded or loaded on deman
 
 **Consider** using services and rxjs subjects to interact between components instead of libraries like ngrx, ngxs or akita.
 
-**Why?** I know those libraries are trendy and fancy, however problems regarding state management may occur in the case of huge or complex applications. [Read more here](https://blog.angular-university.io/angular-2-redux-ngrx-rxjs/).
+**Why?** I know those libraries are trendy and fancy, however problems regarding state management (in general), you may experience in the case of huge, complex or unusual applications only. [Read more here](https://blog.angular-university.io/angular-2-redux-ngrx-rxjs/).
 
 ![State Management](https://raw.githubusercontent.com/bartuck/angular-best-boilerplate/master/src/assets/images/contents/angular-best-boilerplate-state.png)
 
