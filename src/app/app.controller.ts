@@ -1,9 +1,9 @@
 import { en_GB } from '../translations/en_GB.const';
-import { Translations } from './core/interfaces/translations.interface';
-import { routerConfig } from './core/config/router-config.const';
 import { appConfig } from './core/config/app-config.const';
-import { RouterConfig } from './core/interfaces/router-config.interface';
+import { routerConfig } from './core/config/router-config.const';
 import { AppConfig } from './core/interfaces/app-config.interface';
+import { RouterConfig } from './core/interfaces/router-config.interface';
+import { Translations } from './core/interfaces/translations.interface';
 
 export abstract class AppController {
 

@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { environment } from '../../../environments/environment';
@@ -14,7 +14,12 @@ export class ApiInterceptor implements HttpInterceptor {
     const parsedApiUrl = apiUrl.replace('///', '/').replace('//', '/');
 
     req = req.clone({
-      url: parsedApiUrl
+      url: parsedApiUrl,
+      setHeaders: {
+        'Content-Security-Policy': `frame-ancestors ${environment.security.allowedOrigins}`,
+        'X-Frame-Options': `ALLOW-FROM ${environment.security.allowedOrigins}`,
+        'X-XSS-Protection': '1; mode=block'
+      }
     });
 
     return next.handle(req);

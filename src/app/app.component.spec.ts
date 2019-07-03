@@ -1,15 +1,15 @@
-import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { AppComponent } from './app.component';
-import { testingRoutes } from '../test/mocks/routes.mock';
-import { appConfig } from './core/config/app-config.const';
-import { DummySearchComponent } from '../test/components/dummy-search.component';
 import { DummyHomeComponent } from '../test/components/dummy-home.component';
 import { DummyLoginComponent } from '../test/components/dummy-login.component';
+import { DummySearchComponent } from '../test/components/dummy-search.component';
+import { testingRoutes } from '../test/mocks/routes.mock';
+import { AppComponent } from './app.component';
+import { appConfig } from './core/config/app-config.const';
 
 describe('AppComponent', () => {
   let fixture: ComponentFixture<AppComponent>;

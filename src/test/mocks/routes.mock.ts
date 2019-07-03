@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 
-import { DummySearchComponent } from '../components/dummy-search.component';
-import { DummyLoginComponent } from '../components/dummy-login.component';
 import { AppComponent } from '../../app/app.component';
+import { DummyLoginComponent } from '../components/dummy-login.component';
+import { DummySearchComponent } from '../components/dummy-search.component';
 
 export const testingRoutes: Routes = [
   { path: '', component: AppComponent, data: { title: 'Home'} },
