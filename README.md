@@ -30,7 +30,7 @@ _- UIkit, Style Guide or Storybook_
 3. Extendable abstract AppController in `src/app/app.controller.ts`.
 4. Proxying by `proxy.conf.json` on `npm start`.
 5. Webpack Bundle Analyzer on `npm run analyzer`.
-6. ApiInterceptor in `src/app/core/interceptors/api.interceptor.ts` to set base API url taken from `src/environments` directory;
+6. ApiInterceptor in `src/app/core/interceptors/api.interceptor.ts` to a) set base API url taken from `src/environments` directory; set recommended HTTP headers (security);
 7. `src/lib/js/modernizr-touch-events.js` indicates if the browser supports the W3C Touch Events API.
 8. Auto-refreshing the app browser tab title on route change (see `src/app/app.component.ts`)
 
