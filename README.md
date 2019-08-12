@@ -34,7 +34,8 @@ _- UIkit, Style Guide or Storybook_
 - set base API url taken from `src/environments` directory 
 - set recommended HTTP headers (security)
 7. `src/lib/js/modernizr-touch-events.js` indicates if the browser supports the W3C Touch Events API.
-8. Auto-refreshing the app browser tab title on route change (see `src/app/app.component.ts`)
+8. Auto-refreshing the browser tab title on route change (see `src/app/app.component.ts`)
+9. .htaccess (Apache) and web.config (IIS) configuring the server to return the application's host page (index.html) when asked for a file that it does not have.
 
 <a name="getting-started"/>
 
@@ -51,7 +52,8 @@ _- UIkit, Style Guide or Storybook_
 9. Set your project name in `package.json`: lines 2nd and 12th.
 10. Set your API urls in `src/environments`.
 11. Replace the default Angular favicon with yours.
-12. You are ready to work.
+12. Verify whether you need `web.config` (IIS) or `.htaccess` (Apache) in `src` and `angular.json` (`projects` > `architect` > `build` > `options` > `assets`). If you need `web.config`, verify security headers in the file.
+13. You are ready to work.
 
 <a name="cli"/>
 
@@ -188,7 +190,7 @@ A distinct application feature or workflow may be lazy loaded or loaded on deman
 
 **Consider** using services and rxjs subjects to interact between components instead of libraries like ngrx, ngxs or akita.
 
-**Why?** I know those libraries are trendy and fancy, however problems regarding state management (in general), you may experience in the case of huge, complex or unusual applications only. [Read more here](https://blog.angular-university.io/angular-2-redux-ngrx-rxjs/).
+**Why?** I know those libraries are trendy and fancy, however you may experience problems regarding state management only in the case of huge, complex or unusual applications. [Read more here](https://blog.angular-university.io/angular-2-redux-ngrx-rxjs/).
 
 ![State Management](https://raw.githubusercontent.com/bartuck/angular-best-boilerplate/master/src/assets/images/contents/angular-best-boilerplate-state.png)
 
