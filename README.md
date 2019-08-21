@@ -212,4 +212,5 @@ Remember about the performance:
 2. Network performance.
 
 Please refer to https://github.com/mgechev/angular-performance-checklist
+
 Read https://christianlydemann.com/the-complete-guide-to-angular-load-time-optimization
